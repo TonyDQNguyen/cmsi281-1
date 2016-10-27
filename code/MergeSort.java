@@ -48,6 +48,8 @@ public class MergeSort {
     }
 
     // copy the remaining left elements back to the original array
-
+   int remaining = middle - leftIndex;
+   for (int i = 0; i <= remaining; i++){
+     array[arrayIndex+i] = temp[leftIndex+i];
   }
 }
